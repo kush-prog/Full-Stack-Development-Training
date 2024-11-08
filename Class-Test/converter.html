@@ -1,79 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .converter-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .converter-container h2 {
-            margin-bottom: 20px;
-        }
-        .converter-container input, .converter-container select {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .converter-container button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 4px;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-        }
-        .converter-container button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="converter-container">
 
         <h2>Currency Converter</h2>
         <input type="number" id="amount" placeholder="Enter amount" required>
-
+        
         <select id="fromCurrency">
+            <option value="INR">Indian Rupee (INR)</option>
             <option value="USD">United States Dollar (USD)</option>
             <option value="EUR">Euro (EUR)</option>
             <option value="GBP">British Pound (GBP)</option>
-            <option value="INR">Indian Rupee (INR)</option>
             <option value="JPY">Japanese Yen (JPY)</option>
-            <option value="CNY">Chinese Yuan (CNY)</option>
-            <option value="Riyaal">Saudi Riyal (Riyaal)</option>
+            <option value="Riyal">Saudi Arabia (Riyal)</option>
+            <option value="Yuan">Chinese (Yuan)</option>
+            <option value="RUB">Russian (RUB)</option>
         </select>
         <select id="toCurrency">
+            <option value="INR">Indian Rupee (INR)</option>
             <option value="USD">United States Dollar (USD)</option>
             <option value="EUR">Euro (EUR)</option>
             <option value="GBP">British Pound (GBP)</option>
-            <option value="INR">Indian Rupee (INR)</option>
             <option value="JPY">Japanese Yen (JPY)</option>
-            <option value="CNY">Chinese Yuan (CNY)</option>
-            <option value="Riyaal">Saudi Riyal (Riyaal)</option>
+            <option value="Riyal">Saudi Arabia (Riyal)</option>
+            <option value="Yuan">Chinese (Yuan)</option>
+            <option value="RUB">Russian (RUB)</option>
         </select>
-
+        
         <button onclick="convertCurrency()">Convert</button>
         <p id="result"></p>
-
+        <p id="error" class="error"></p>
+    
     </div>
 
     <script src="api.js"></script>
+
 </body>
+
 </html>

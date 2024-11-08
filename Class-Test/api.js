@@ -13,7 +13,9 @@ async function convertCurrency() {
         const rate = data.rates[toCurrency];
         const result = amount * rate;
         document.getElementById('result').textContent = `${amount} ${fromCurrency} = ${result.toFixed(2)} ${toCurrency}`;
+        document.getElementById('error').textContent = ''; 
     } catch (error) {
         console.error('Error converting currency:', error);
+        document.getElementById('error').textContent = 'Error converting currency. Please try again later.';
     }
 }
