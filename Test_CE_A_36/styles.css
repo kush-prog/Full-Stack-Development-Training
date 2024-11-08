@@ -10,34 +10,39 @@ body {
 
 .login-container, .converter-container {
     background-color: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     text-align: center;
 }
 
 .login-container h2, .converter-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #333;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .login-container input, .converter-container input, .converter-container select {
     width: 100%;
     padding: 15px;
-    margin: 10px 0;
+    margin: 15px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
+}
+
+.login-container .button-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .login-container button, .converter-container button {
     width: 48%;
     padding: 15px;
-    margin: 20px 1%;
+    margin: 20px 0;
     border: none;
     border-radius: 5px;
     font-size: 18px;
