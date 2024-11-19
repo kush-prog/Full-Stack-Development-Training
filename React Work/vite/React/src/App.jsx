@@ -1,18 +1,17 @@
 
-import './App.css'
-import Card from './card'
-import pic from './images/Kush.jpg'
+import './App.css';
+import Card from './Card';
 
 function App() {
   
-
   return (
     <div className='app'>
-      <Card name="Kush Chauhan" pic={pic} roll="2200320150036" />
-      <Card/>
-      <Card/>
+      <Card key="1"/>
+      <Card key="2"/>
+      <Card key="3"/>
     </div>
-  )
-}
+  );
+};
 
 export default App
+
