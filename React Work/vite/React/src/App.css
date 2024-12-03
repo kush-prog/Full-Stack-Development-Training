@@ -1,7 +1,14 @@
-.app{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid;
+/* App.css
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+div {
+    text-align: center;
+} */
